@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="main.css" type="text/css">
+
+   <meta charset="utf-8">
+    <title>API Practice</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container-fluid">
+
+      <div class="row" id='search'>
+        <input id='searchbar' class="form-control" placeholder="Search Google Books by Title" type="text"></input>
+        <button class = "btn" id='enter'>Enter</button>
+        <input type="file" id="excelfile" />  
+   <input type="button" id="viewfile" value="Export To Table" onclick="ExportToTable()" /> 
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table id="exceltable">  
+          </table> 
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book1">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book2">
+          </div>
+      </div>    
+      <div class="row">          
+          <div class="col-md-4 col-md-offset-1" id="book3">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book4">
+          </div>
+      </div>    
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book5">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book6">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book7">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book8">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-md-offset-1" id="book9">
+          </div>
+          <div class="col-md-4 col-md-offset-2" id="book10">
+          </div>
+      </div>            
+
+    </div>
+
+    <script src="js/app.js"></script> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.2.0/json2html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.core.min.js"></script>  
+  <script src="main2.js"></script> 
+</body>
+</html>

@@ -1,0 +1,25 @@
+#search{
+	text-align:center;
+}
+#searchbar{
+	width:225px;
+	margin: auto;
+	text-align:center;
+}
+.btn{
+	margin:10px 0;
+}
+.row{
+	padding: 5px 0 5px 0;
+}
+.imgRow{
+	text-align:center;
+	min-height:225px;
+	padding-top:10px;
+}
+#book1,#book2,#book3,
+#book4,#book5,#book6,
+#book7,#book8,#book9,
+#book10{
+	background-color: lightgrey;
+}
