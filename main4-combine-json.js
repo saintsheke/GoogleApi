@@ -59,7 +59,7 @@ function ExportToTable() {
     var obj = jsondata;
     console.log(obj[0].ISBN)
     Object.keys(obj).forEach(function(key) {
-        URL = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyAZjePxWng8xga04XqkCUvr2MuUafc_8_g&q=+isbn:'+obj[key].ISBN + '&fields=items(volumeInfo(title,authors,description,imageLinks(thumbnail)))'
+        URL = 'https://www.googleapis.com/books/v1/volumes?key=&q=+isbn:'+obj[key].ISBN + '&fields=items(volumeInfo(title,authors,description,imageLinks(thumbnail)))'
         clearPrevious();
         $.ajax({
           url: URL.toString(),
